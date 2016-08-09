@@ -19,7 +19,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "lint": "eslint ./src",
-    "test": "npm run lint && mocha ./test"
+    "test": "mocha ./test"
   },
   "devDependencies": {
     "eslint": "^3.2.2",
