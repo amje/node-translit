@@ -7,20 +7,25 @@ function translit(input) {
         throw new Error('Expected type of `input` to be a string');
     }
 
-    let result = '';
+    let value = '';
 
     for (let i = 0, l = input.length; i < l; i++) {
         let char = input[i];
         let translitedChar = translitMap[char];
 
-        if (translitedChar) {
-            result += translitedChar;
+        if (typeof translitedChar !== 'undefined') {
+            value += translitedChar;
         } else {
-            result += char;
+            value += char;
         }
     }
 
-    return result;
+    const extraLength = Math.max(0, value.length - input.length);
+
+    return {
+        value,
+        extraLength
+    };
 }
 
 module.exports = translit;

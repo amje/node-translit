@@ -19,17 +19,16 @@ app.get('/', (req, res) => {
 
 app.get('/result', (req, res) => {
     const input = req.query.input;
-    const translitedInput = translit(input);
-    const extraLength = Math.max(0, translitedInput.length - input.length);
+    const result = translit(input);
 
     console.log('================== GET /result ==================');
     console.time('render');
-    res.render('result', { title: 'Транслитерация', result: translitedInput });
+    res.render('result', { title: 'Транслитерация', result: result.value });
     console.timeEnd('render');
-    console.log('extra length:', extraLength);
+    console.log('extra length:', result.extraLength);
     console.log('=================================================\n\n');
 });
 
 app.listen(app.get('port'), () => {
-    console.log('Listen on port', app.get('port'));
+    console.log('Listening on port', app.get('port'));
 });
