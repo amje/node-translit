@@ -13,10 +13,10 @@ function translit(input) {
         let char = input[i];
         let translitedChar = translitMap[char];
 
-        if (typeof translitedChar !== 'undefined') {
-            value += translitedChar;
-        } else {
+        if (typeof translitedChar === 'undefined') {
             value += char;
+        } else {
+            value += translitedChar;
         }
     }
 
