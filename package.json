@@ -1,0 +1,11 @@
+{
+  "name": "node-translit",
+  "version": "0.0.1",
+  "description": "Домашнее задание ШРИ по инфраструктуре",
+  "author": "Andrey Morozov",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "mocha": "^3.0.2"
+  }
+}
