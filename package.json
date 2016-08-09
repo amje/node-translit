@@ -5,6 +5,9 @@
   "description": "Домашнее задание ШРИ по инфраструктуре",
   "author": "Andrey Morozov",
   "license": "UNLICENSED",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luckytrue/node-translit.git"
