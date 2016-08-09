@@ -1,11 +1,24 @@
 {
   "name": "node-translit",
+  "private": true,
   "version": "0.0.1",
   "description": "Домашнее задание ШРИ по инфраструктуре",
   "author": "Andrey Morozov",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckytrue/node-translit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luckytrue/node-translit/issues"
+  },
+  "homepage": "https://github.com/luckytrue/node-translit#readme",
   "devDependencies": {
     "eslint": "^3.2.2",
     "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta4"
   }
 }

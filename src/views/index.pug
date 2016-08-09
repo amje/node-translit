@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    form(method="GET" action="/result")
+        p
+            textarea(name="input" placeholder="Введите текст на русском языке" cols="30" rows="3")
+        p
+            button Получить транслит
