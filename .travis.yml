@@ -4,3 +4,9 @@ node_js:
 script:
   - npm run lint
   - npm test
+deploy:
+  provider: heroku
+  app: node-translit
+  on: master
+  api_key:
+    secure: ZaGcuY18f0ptNW3J52eCS9wPe6Uywo6G7yo1219zl1rGkEb9irWpuuQDUmmv+gG+3VZReoZxLw4bktg8htV/xjNPZmCuQ/XvJSm11jtei/j/ApmkZNrissDqWRcOAqxhxSu56+xsjPvwg5DQchjUnWHpd3buYuADeYQQQ74TJwTF2k4vJXuQBlm0N93kxfrXL7tbSytWfBIXhwYzkSYkb/CcqtTWmZp3ebgbswNMWD9j4q2AQavhiQSAuwv60Zs+W8KoUB3LRNzY+VGdFRISCwFkinRjZ6FWxmJJuKhovYVYevslObFL1redHHHiaGgynQkf8skKJcKTruMQfq/mp5sNp+1XurvY2sPGmI8ossBsMK3Mc14bcAsGogp7Jn8spBoDeTPaObabtgzRCYm4HWGWKXRN7bzUJ/eVk2gtyvfvVp+7e7zIhGQD4LaJ8r/Go0Y8Jvo5X3aNaV8YpMxtKDtbMMPSGfWk+u9XlfGt9YyuRrn/i1Zhf1FQELAcLDwhkI/+DAooD9yDbs+Sy00oMNIo9dsFgAuyRF1CDzy9+usxURISSx/4VmJaC8hej9PBXBc6Rn8SzB8ED5dRWp0dWiHStmHt8AUd39tGVJf+kedGz0ugqWxS30VGYs6HoBz6zAmTquF9pyDUtt1PIiZlTOHBgIXVfFMsHQtr4BQPVpM=
