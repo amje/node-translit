@@ -9,7 +9,9 @@ describe('translit function', () => {
     it('should throw an error', () => {
         const input = null;
 
-        expect(() => { translit(input); }).toThrow('Expected type of `input` to be a string');
+        expect(() => {
+            translit(input);
+        }).toThrow('Expected type of `input` to be a string');
     });
 
     it('should return an object with `value` and `extraLength` properties', () => {
